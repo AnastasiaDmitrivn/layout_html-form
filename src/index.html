@@ -12,41 +12,70 @@
   </head>
   <body>
     <script type="text/javascript" src="./main.js"></script>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post"
-    autocomplete="off" onsubmit="onSubmit()">
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+      autocomplete="off"
+      onsubmit="onSubmit()"
+    >
       <div>
         <fieldset>
           <legend>Personal information</legend>
           <div class="input">
             <label for="sur">
-              Surname: <input type="text" name="surname"
-              id="sur" maxlength="10">
+              Surname:
+              <input
+                type="text"
+                name="surname"
+                id="sur"
+                maxlength="10"
+              >
             </label>
           </div>
           <div class="input">
             <label for="names">
-              Name: <input type="text" name="name"
-              id="names" maxlength="10">
+              Name:
+              <input
+                type="text"
+                name="name"
+                id="names"
+                maxlength="10"
+              >
             </label>
           </div>
           <div class="input">
             <label for="ages">
-              How old are You? <input type="number" name="age"
-              id="ages" max="100"
-              min="12" value="12">
+              How old are You?
+              <input
+                type="number"
+                name="age"
+                id="ages"
+                max="100"
+                min="12"
+                value="12"
+              >
             </label>
           </div>
           <div class="input">
             <label for="birth">
-              Full date of birth: <input type="date" name="date"
-              id="birth">
+              Full date of birth:
+              <input
+                type="date"
+                name="date"
+                id="birth"
+              >
             </label>
           </div>
           <div class="last">
             <label for="term">
-              I accept the term of the agreement <input type="checkbox" name="agree"
-              id="term"
-              class="last" required>
+              I accept the term of the agreement
+              <input
+                type="checkbox"
+                name="agree"
+                id="term"
+                class="last"
+                required
+              >
             </label>
           </div>
         </fieldset>
@@ -56,17 +85,27 @@
           <legend>Registration</legend>
           <div class="input">
             <label for="mail">
-              E-mail: <input type="email" name="email"
-              id="mail" placeholder="email@example.com"
-              required>
+              E-mail:
+              <input
+                type="email"
+                name="email"
+                id="mail"
+                placeholder="email@example.com"
+                required
+              >
             </label>
           </div>
           <div class="last">
             <label for="passw">
-              Password: <input type="password" name="password"
-              id="passw" class="last"
-              minlength="5"
-              required>
+              Password:
+              <input
+                type="password"
+                name="password"
+                id="passw"
+                class="last"
+                minlength="5"
+                required
+              >
             </label>
           </div>
         </fieldset>
@@ -75,42 +114,74 @@
         <fieldset>
           <legend>An interesting fact about you!</legend>
           <div class="input">
-            <label for="yescats"> Do you love cats?
-              <input type="radio"
-              name="cats" id="yescats"> Yes
+            <label for="yescats">
+              Do you love cats?
+              <input
+                type="radio"
+                name="cats"
+                id="yescats"
+              > Yes
             </label>
             <label for="nocats">
-              <input type="radio"
-              name="cats" id="nocats"> No
+              <input
+                type="radio"
+                name="cats"
+                id="nocats"
+              > No
             </label>
           </div>
           <div class="input">
             <label for="favcolor">
-            What is your favorite color? <input type="color"
-            name="color" id="favcolor">
+              What is your favorite color?
+              <input
+                type="color"
+                name="color"
+                id="favcolor"
+              >
             </label>
           </div>
           <div class="input">
             <label for="bed">
-              What time do you go to bed? <input type="time"
-              name="time" id="bed"
-              step="1">
+              What time do you go to bed?
+              <input
+                type="time"
+                name="time"
+                id="bed"
+                step="1"
+              >
             </label>
           </div>
           <div class="input">
-            <label for="cars" class="input">
-              What are your favorite brand of cars? <select name="brand"
-              id="cars" multiple>
-                <option value="BMW" name="BMW">BMW</option>
-                <option value="Audi" name="Audi">Audi</option>
-                <option value="Lada" name="Lada">Lada</option>
+            <label for="cars"
+            class="input">
+              What are your favorite brand of cars?
+              <select
+                name="brand"
+                id="cars"
+                multiple
+              >
+                <option value="BMW"
+                  name="BMW">BMW
+                </option>
+                <option value="Audi"
+                  name="Audi">Audi
+                </option>
+                <option value="Lada"
+                  name="Lada">Lada
+                </option>
               </select>
             </label>
           </div>
           <div class="last">
-            <label for="workrate" class="last">
-              How do you rate our work? <input type="range" name="rate"
-              id="workrate" value="0">
+            <label for="workrate"
+            class="last">
+              How do you rate our work?
+              <input
+                type="range"
+                name="rate"
+                id="workrate"
+                value="0"
+              >
             </label>
           </div>
         </fieldset>
@@ -120,23 +191,47 @@
           <legend>Additional info:</legend>
           <div class="input">
             <label for="comments">
-              Comments: <textarea name="commentme" id="comments"
-              cols="20" rows="2"></textarea>
+              Comments:
+              <textarea
+                name="commentme"
+                id="comments"
+                cols="20"
+                rows="2"
+              >
+              </textarea>
             </label>
           </div>
           <div class="last">
-            <label for="rec" class="last">
-              Would you recommend us? <select name="recommend" id="rec"
-              class="last">
-                <option value="yes" name="yes">yes</option>
-                <option value="no" name="no">no</option>
+            <label for="rec"
+            class="last">
+              Would you recommend us?
+              <select
+                name="recommend"
+                id="rec"
+                class="last"
+              >
+                <option
+                  value="yes"
+                  name="yes"
+                >yes
+                </option>
+                <option
+                  value="no"
+                  name="no"
+                >no
+                </option>
               </select>
             </label>
           </div>
         </fieldset>
       </div>
       <div>
-        <button type="submit" name="submit1">Submit</button>
+        <button
+          type="submit"
+          name="submit1"
+          class="button"
+        >Submit
+        </button>
       </div>
     </form>
   </body>
